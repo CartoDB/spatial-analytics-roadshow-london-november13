@@ -13,7 +13,7 @@
 
 ### An introduction to Spatial Analytics in the Cloud  
 🕐 13:00 – 13:40  
-**Led by:** [Speaker Name], [Title] at [Organization]  
+**Led by:** [Speaker Name], [Title] at Carto 
 📑 Slides  - Please wait for content to be added
 
 ---
@@ -32,7 +32,7 @@
 
 ### In action: unlocking value with real-world use cases  
 🕒 15:00 – 15:45  
-**Led by:** [Speaker Name], [Title] at [Organization]  
+**Led by:** [Speaker Name], [Title] at Carto
 📑 Slides  - Please wait for content to be added
 
 ---

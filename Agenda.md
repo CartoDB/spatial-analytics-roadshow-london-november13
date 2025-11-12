@@ -24,7 +24,8 @@
 **Led by:** Helen Mckenzie, Geospatial Advocate at CARTO 
 
 * [Slides](https://docs.google.com/presentation/d/1dgwEkFDuXmHsv3hL5wdW_8nSA-21cvqbuYuVDMh_MBk/edit?slide=id.g3a02e1f47b2_0_5#slide=id.g3a02e1f47b2_0_5)
-* [Worksheets](https://docs.google.com/document/d/1xjR3f02vifQ4fskmE02GQeH1_cMOj6fImYKKDyDQNF0/edit?tab=t.0#heading=h.xjhhrsinhofm)
+* [Worksheet](https://docs.google.com/document/d/1xjR3f02vifQ4fskmE02GQeH1_cMOj6fImYKKDyDQNF0/edit?tab=t.0#heading=h.xjhhrsinhofm)
+* [Alternative github guide](https://github.com/CartoDB/spatial-analytics-roadshow-london-november13/blob/fc6ebfc85d8e42fc13f830f8bd7efdd55d4b9cd4/Snowflake%20roadshow%2013_11_2025%20Hands-on%20lab.md) - suggest using this only if your organization doesn't allow access to external Google docs.
 ---
 
 ### ☕ Coffee Break  

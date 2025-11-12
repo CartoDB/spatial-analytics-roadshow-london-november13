@@ -212,11 +212,9 @@ In this final section, we’re going to add our MCP tool to our Agent.
 3. When the workflow completes, you must use the `/add_source` tool with the following parameters to add the results as a new H3 layer.  
 Do not use the `/add_source_from_workflows` tool.  
 
-```
 type = 'query'  
 sql = SELECT * FROM <workflow_output_table>  
 geoColumn = 'H3'  
-```
 
 After adding the source, add it to the map as a H3 layer with a red fill and a dark red stroke.  
 Do not add tooltips.  

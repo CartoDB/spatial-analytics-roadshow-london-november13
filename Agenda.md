@@ -36,8 +36,6 @@
 🕒 15:00 – 15:45  
 **Led by:** Simon Wrigley, Solutions Engineer at CARTO
 
-* Slides  - Please wait for content to be added
-
 ---
 
 ### Close  

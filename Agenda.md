@@ -15,7 +15,7 @@
 🕐 13:00 – 13:40  
 **Led by:** Adam Roberts, Customer Success Manager at CARTO & Fawad Qureshi, field CTO at Snowflake
 
-* Slides  - Please wait for content to be added
+* * [Slides](https://docs.google.com/presentation/d/1eDhDXqUsw6DyW2xdZHcOMArLNRBa2vnN9rhmef8_1vA/edit?usp=sharing)
 
 ---
 

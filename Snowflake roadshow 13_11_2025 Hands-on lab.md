@@ -62,7 +62,7 @@ You may use the following data sources for your analysis:
 ## Task 1: collisions by location
 - If asked to calculate the number of collisions by area (e.g., within a ward), `/execute_query` using the following SQL as a template:
 
-```sql
+\`\`\`sql
 SELECT
   w.WD21CD,
   w.WD21NM,
@@ -76,10 +76,11 @@ GROUP BY
   w.WD21NM
 ORDER BY
   collisions_count DESC;
+\`\`\`
+
+- `/add_source` and `/add_layer` to the map showing the wards. Style the fill with a sequential palette showing number of collisions, and set the stroke colour to white. Turn off the collisions – locations layer.
 ```
 
-- /add_source and /add_layer to the map showing the wards. Style the fill with a sequential palette showing number of collisions, and set the stroke colour to white. Turn off the collisions - locations layer.
-```
 
 ---
 

@@ -78,9 +78,7 @@ ORDER BY
   collisions_count DESC;
 ```
 
-- `/add_source` and `/add_layer` to the map showing the wards with a sequential fill showing number of collisions.  
-- Do not add a tooltip.  
-- Turn off the collisions (locations) layer.
+- /add_source and /add_layer to the map showing the wards. Style the fill with a sequential palette showing number of collisions. Do not add a tooltip. Turn off the collisions - locations layer.
 
 ---
 

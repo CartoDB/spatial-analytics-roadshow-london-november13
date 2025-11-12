@@ -82,7 +82,7 @@ ORDER BY
 - Do not add a tooltip.  
 - Turn off the collisions (locations) layer.
 ```
-
+| :---- |
 **Query sources for insights:** enabled
 
 **Model:** gemini-2.5-pro

@@ -15,7 +15,7 @@
 🕐 13:00 – 13:40  
 **Led by:** Adam Roberts, Customer Success Manager at CARTO & Fawad Qureshi, field CTO at Snowflake
 
-📑 Slides  - Please wait for content to be added
+* Slides  - Please wait for content to be added
 
 ---
 
@@ -23,8 +23,8 @@
 🕐 13:40 – 14:30  
 **Led by:** Helen Mckenzie, Geospatial Advocate at CARTO 
 
-📑 Slides  - Please wait for content to be added
-
+* [Slides](https://docs.google.com/presentation/d/1dgwEkFDuXmHsv3hL5wdW_8nSA-21cvqbuYuVDMh_MBk/edit?slide=id.g3a02e1f47b2_0_5#slide=id.g3a02e1f47b2_0_5)
+* [Worksheets](https://docs.google.com/document/d/1xjR3f02vifQ4fskmE02GQeH1_cMOj6fImYKKDyDQNF0/edit?tab=t.0#heading=h.xjhhrsinhofm)
 ---
 
 ### ☕ Coffee Break  
@@ -36,7 +36,7 @@
 🕒 15:00 – 15:45  
 **Led by:** Simon Wrigley, Solutions Engineer at CARTO
 
-📑 Slides  - Please wait for content to be added
+* Slides  - Please wait for content to be added
 
 ---
 

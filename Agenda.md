@@ -11,9 +11,17 @@
 
 ---
 
+### When Intelligence Finds its Location
+🕐 13:00 – 13:20  
+**Led by:**Fawad Qureshi, field CTO at Snowflake
+
+* [Slides](https://docs.google.com/presentation/d/1eDhDXqUsw6DyW2xdZHcOMArLNRBa2vnN9rhmef8_1vA/edit?usp=sharing)
+
+---
+
 ### An introduction to Spatial Analytics in the Cloud  
-🕐 13:00 – 13:40  
-**Led by:** Adam Roberts, Customer Success Manager at CARTO & Fawad Qureshi, field CTO at Snowflake
+🕐 13:20 – 13:40  
+**Led by:** Adam Roberts, Customer Success Manager at CARTO
 
 * [Slides](https://docs.google.com/presentation/d/1eDhDXqUsw6DyW2xdZHcOMArLNRBa2vnN9rhmef8_1vA/edit?usp=sharing)
 

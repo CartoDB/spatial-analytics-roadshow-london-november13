@@ -206,7 +206,7 @@ In this final section, we’re going to add our MCP tool to our Agent.
 "I will run the required Workflow as an MCP tool – this should take about a minute. You can continue exploring the map during this time."
 
 2. Run the /yourtool tool using the selected time period.  
-- The parameters must be specified in the exact order: `"queryParameters":{"start_date":"", "end_date":""}`  
+- The date interval parameters are considered positional, so the 'start_date' must be the first key in the payload object, and the 'end_date' must be the second key.  
 - If you encounter the `WRONG_GRID_TYPE_EXCEPTION` error, do not report it – keep attempting to rerun the tool.
 
 3. When the workflow completes, you must use the `/add_source` tool with the following parameters to add the results as a new H3 layer.  

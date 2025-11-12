@@ -81,64 +81,65 @@ ORDER BY
 - `/add_source` and `/add_layer` to the map showing the wards with a sequential fill showing number of collisions.  
 - Do not add a tooltip.  
 - Turn off the collisions (locations) layer.
-```
+
+---
+
 | :---- |
-**Query sources for insights:** enabled
+**Query sources for insights:** enabled  
 
-**Model:** gemini-2.5-pro
+**Model:** gemini-2.5-pro  
 
-**Welcome message:**
+**Welcome message:**  
 
 | Your AI Agent for understanding collision risk in London. |
 | :---- |
 
-**Conversation starters: (Make sure you select \+ to add this)**
+**Conversation starters: (Make sure you select + to add this)**  
 
 | Summarize collisions by ward |
 | :---- |
 
-4. Hit save\!   
-5. Back in your map, you can see the agent is ready to use\! Try clicking the starter prompt, or asking it a question like “Describe year-on-year trends of serious and fatal collisions” or “Show me collisions involving floods.” 
+4. Hit save!  
+5. Back in your map, you can see the agent is ready to use! Try clicking the starter prompt, or asking it a question like “Describe year-on-year trends of serious and fatal collisions” or “Show me collisions involving floods.”  
 
 <img width="1600" height="862" alt="using AI Agent" src="https://github.com/user-attachments/assets/04a12dcd-2816-4a25-97b8-bb5d9c39b63a" />
 
+Now try running the “Which 5 wards had the most collisions?” prompt again… it should respond by asking you to specify a time period first.  
 
-Now try running the “Which 5 wards had the most collisions?” prompt again… it should respond by asking you to specify a time period first.
-
-Congratulations \- you’ve just created your first AI Agent\! Now, let’s explore how we can connect this to external tools. 
+Congratulations – you’ve just created your first AI Agent! Now, let’s explore how we can connect this to external tools.  
 
 ---
 
 # **Part 3: Building an MCP tool** {#part-3:-building-an-mcp-tool}
 
-**💡Get stuck? [Here’s](https://clausa.app.carto.com/workflows/53932c18-7c6d-4508-9998-17e941b0cf7d) one we created earlier for you to explore.**
+**💡 Get stuck? [Here’s](https://clausa.app.carto.com/workflows/53932c18-7c6d-4508-9998-17e941b0cf7d) one we created earlier for you to explore.**
 
-Now we’re going to create a simple MCP tool that calculates collision hotspots, allowing our map user to define the time period for the hotspots. 
+Now we’re going to create a simple MCP tool that calculates collision hotspots, allowing our map user to define the time period for the hotspots.  
 
 1. First, in the main CARTO workspace ([app.carto.com](http://app.carto.com)) open the **Workflows** tab.  
-2. Find the workflow **Collision hotspots\_TEMPLATE**. Just like we did with the map, click the three dots here to duplicate the workflow.  
+2. Find the workflow **Collision hotspots_TEMPLATE**. Just like we did with the map, click the three dots here to duplicate the workflow.  
 3. Once opened, rename it from “TEMPLATE” to your own name. You should be looking at something like this…
 
 <img width="1600" height="863" alt="workflow 1" src="https://github.com/user-attachments/assets/5c422bc3-78fe-4825-97dc-fd38a7c9956f" />
 
-
-Now, let’s turn it into a tool that connects to our Agent\! 
+Now, let’s turn it into a tool that connects to our Agent!  
 
 4. First, let’s set some variables that allow the user to customize the workflow through natural language. Open the **Variables** tab (next to Run) and add the following variables:
 
-| Order | Name | Type | Default value | MCP Tool |      API |
-| :---- | :---- | :---- | :---- | ----- | ----- |
-| 1\. | start\_date | String | 2000-01-01 |  ✅  |  |
-| 2\. | end\_date | String | 2024-12-31 | :✅ |  |
+| Order | Name | Type | Default value | MCP Tool | API |
+| :---- | :---- | :---- | :---- | :---- | :---- |
+| 1. | start_date | String | 2000-01-01 | ✅ |  |
+| 2. | end_date | String | 2024-12-31 | ✅ |  |
 
-5. Now, we need some way to pass these variables into our workflow. On the left side of the screen, switch from Sources to **Components**. Search for and add a **Where** component to the canvas, linking it to the LONDON\_COLLISIONS table and H3 from Geopoint.  
-6. Add the below SQL to the Where component.
+5. Now, we need some way to pass these variables into our workflow. On the left side of the screen, switch from **Sources** to **Components**. Search for and add a **Where** component to the canvas, linking it to the LONDON_COLLISIONS table and H3 from Geopoint.  
+6. Add the below SQL to the Where component:
 
 ```sql
 geom IS NOT NULL
   AND DATE(COLLISION_DATE) BETWEEN
       TO_DATE(@start_date) AND TO_DATE(@end_date)
 ```
+
 
 | :---- |
 

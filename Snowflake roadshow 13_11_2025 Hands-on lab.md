@@ -136,8 +136,12 @@ Now, let’s turn it into a tool that connects to our Agent!
 
 ```sql
 geom IS NOT NULL
-  AND DATE(COLLISION_DATE) BETWEEN
-      TO_DATE(@start_date) AND TO_DATE(@end_date)
+  AND
+(
+  DATE(COLLISION_DATE) BETWEEN TO_DATE(@start_date) AND TO_DATE(@end_date)
+OR DATE(COLLISION_DATE)
+  BETWEEN  TO_DATE(@end_date) AND TO_DATE(@start_date)
+)
 ```
 
 

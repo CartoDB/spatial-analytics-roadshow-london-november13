@@ -13,7 +13,7 @@
 
 ### When Intelligence Finds its Location
 🕐 13:00 – 13:20  
-**Led by:**Fawad Qureshi, field CTO at Snowflake
+**Led by:** Fawad Qureshi, field CTO at Snowflake
 
 * [Slides](https://docs.google.com/presentation/d/1eDhDXqUsw6DyW2xdZHcOMArLNRBa2vnN9rhmef8_1vA/edit?usp=sharing)
 
